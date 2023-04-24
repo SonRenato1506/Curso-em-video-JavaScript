@@ -21,11 +21,11 @@
         var lin = prompt("Qual foi sua nota em linguagem de programação?")
         var alg = prompt("Qual foi sua nota em algoritimos?")
         var sis = prompt("Qual foi sua nota em sistemas computacionais?")
-        document.writeln(`Sua nota em matemática foi ${mat}`)
-        document.writeln(`Sua nota em ciências da natureza foi ${bio}`)
-        document.writeln(`Sua nota em ciências humanas foi ${(his + geo)/2}`)
-        document.writeln(`Sua nota em linguagens foi ${(por + ing + esp + art + edf)/5}`)
-        document.writeln(`Sua nota em técnico de informática foi ${(pra + lin + alg + sis)/4}`)
+        document.writeln(`<p>Sua nota em matemática foi ${mat}</p>`)
+        document.writeln(`<p>Sua nota em ciências da natureza foi ${bio}</p>`)
+        document.writeln(`<p>Sua nota em ciências humanas foi ${(Number(his) + Number(geo))/2}</p>`)
+        document.writeln(`<p>Sua nota em linguagens foi ${(Number(por) + Number(ing) + Number(esp) + Number(art) + Number(edf))/5}</p>`)
+        document.writeln(`<p>Sua nota em técnico de informática foi ${(Number(pra) + Number(lin) + Number(alg) + Number(sis))/4}</p>`)
         
         </script>
 </body>
