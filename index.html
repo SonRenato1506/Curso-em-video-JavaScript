@@ -1,32 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-<body>
-    <script>
-        var mat = prompt("Qual foi sua nota em matemática?")
-        var bio = prompt("Qual foi sua nota em biologia?")
-        var his = prompt("Qual foi sua nota em história?")
-        var geo = prompt("Qual foi sua nota em geografia?")
-        var por = prompt("Qual foi sua nota em português?")
-        var ing = prompt("Qual foi sua nota em inglês?")
-        var esp = prompt("Qual foi sua nota em espanhol?")
-        var art = prompt("Qual foi sua nota em artes?")
-        var edf = prompt("Qual foi sua nota em educação física?")
-        var pra = prompt("Qual foi sua nota em prática de laboratório?")
-        var lin = prompt("Qual foi sua nota em linguagem de programação?")
-        var alg = prompt("Qual foi sua nota em algoritimos?")
-        var sis = prompt("Qual foi sua nota em sistemas computacionais?")
-        document.writeln(`<p>Sua nota em matemática foi ${mat}</p>`)
-        document.writeln(`<p>Sua nota em ciências da natureza foi ${bio}</p>`)
-        document.writeln(`<p>Sua nota em ciências humanas foi ${(Number(his) + Number(geo))/2}</p>`)
-        document.writeln(`<p>Sua nota em linguagens foi ${(Number(por) + Number(ing) + Number(esp) + Number(art) + Number(edf))/5}</p>`)
-        document.writeln(`<p>Sua nota em técnico de informática foi ${(Number(pra) + Number(lin) + Number(alg) + Number(sis))/4}</p>`)
+    <style>
+        form {
+            gap: 10px;
+        }
+
+        label {
+            text-align: end;
+        }
+
+        input {
+            position: absolute;
+            left: 14%;
+            width: 45px;
+        }
         
-        </script>
+        p {
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="mat">Matemática</label>
+        <input type="number" name="mat" id="mat">
+        <br>
+        <label for="bio">Biologia</label>
+        <input type="number" name="bio" id="bio">
+        <br>
+        <label for="his">História</label>
+        <input type="number" name="his" id="his">
+        <br>
+        <label for="geo">Geografia</label>
+        <input type="number" name="geo" id="geo">
+        <br>
+        <label for="por">Português</label>
+        <input type="number" name="por" id="por">
+        <br>
+        <label for="ing">Inglês</label>
+        <input type="number" name="ing" id="ing">
+        <br>
+        <label for="esp">Espanhol</label>
+        <input type="number" namprae="esp" id="esp">
+        <br>
+        <label for="art">Artes</label>
+        <input type="number" name="art" id="art">
+        <br>
+        <label for="edf">Educação física</label>
+        <input type="number" name="edf" id="edf">
+        <br>
+        <label for="pra">Prática de laboratório</label>
+        <input type="number" name="pra" id="pra">
+        <br>
+        <label for="lin">Linguagem de programação</label>
+        <input type="number" name="lin" id="lin">
+        <br>
+        <label for="alg">Algoritimos</label>
+        <input type="number" name="alg" id="alg">
+        <br>
+        <label for="sis">Sistemas Computacionais</label>
+        <input type="number" name="sis" id="sis">
+    </form>
+    <button onclick="clicar()">Enviar</button>
+    <script>
+        function clicar() {
+            var mat = Number(document.getElementById('mat').value)
+            var bio = Number(document.getElementById('bio').value)
+            var his = Number(document.getElementById('his').value)
+            var geo = Number(document.getElementById('geo').value)
+            var por = Number(document.getElementById('por').value)
+            var ing = Number(document.getElementById('ing').value)
+            var esp = Number(document.getElementById('esp').value)
+            var art = Number(document.getElementById('art').value)
+            var edf = Number(document.getElementById('edf').value)
+            var pra = Number(document.getElementById('pra').value)
+            var lin = Number(document.getElementById('lin').value)
+            var alg = Number(document.getElementById('alg').value)
+            var sis = Number(document.getElementById('sis').value)
+            document.writeln(`<p>Sua nota em matemática foi ${mat}</p>`)
+            document.writeln(`<p>Sua nota em ciências da natureza foi ${bio}</p>`)
+            document.writeln(`<p>Sua nota em ciências humanas foi ${(Number(his) + Number(geo)) / 2}</p>`)
+            document.writeln(`<p>Sua nota em linguagens foi ${(Number(por) + Number(ing) + Number(esp) + Number(art) + Number(edf)) / 5}</p>`)
+            document.writeln(`<p>Sua nota em técnico de informática foi ${(Number(pra) + Number(lin) + Number(alg) + Number(sis)) / 4}</p>`)
+
+        }
+    </script>
 </body>
+
 </html>
