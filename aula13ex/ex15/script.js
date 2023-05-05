@@ -4,12 +4,14 @@ function verificar() {
     var fAno = document.querySelector('#txtano').value
     var img = document.getElementById('imagem')
     var idade = (Number(ano) - Number(fAno))
-    var fsex = document.getElementsByName('radsex')
+    var mas = document.getElementById('mas')
+    var fem = document.getElementById('fem')
     res = document.getElementById('res')
+    
     if (idade < 0) {
         alert("Erro nos dados, tente novamente")
     }
-    if (mas = true) {
+    if (mas.checked) {
         if (idade <= 3) {
             img.src = `imagens/bebe-homem.jpg`
         }
@@ -29,7 +31,7 @@ function verificar() {
             img.src = `imagens/idoso-homem.jpg`
         }
     }
-    else if (fem = true) {
+    else if (fem.checked) {
         if (idade <= 3) {
             img.src = `imagens/bebe-mulher.jpg`
         }
