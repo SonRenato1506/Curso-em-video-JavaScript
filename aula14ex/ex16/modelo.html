@@ -8,14 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div>Testando...</div>
-        <div>Olá mundo!</div>
+        <form action="">
+            <label for="start">Início</label>
+            <input type="number" id="start" name="start"> <br>
+            <label for="end">Fim</label>
+            <input type="number" id="end" name="end"> <br>
+            <label for="jump">Salto</label>
+            <input type="number" id="jump" name="jump"> <br>
+            <input type="button" value="Contar" onclick="contar()">
+        </form>
+        <div>Contando</div>
+        <div id="res"></div>
     </section>
     <footer>
-        <p>&copy; CursoEmVideo</p>
+        <p>&copy; SonRenato</p>
     </footer>
     <script src="script.js"></script>
 </body>
