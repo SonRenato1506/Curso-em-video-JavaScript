@@ -6,7 +6,7 @@ function contar() {
     n = Number(n.value)
     c = 1
     while (c <= 10) {
-        res.innerHTML += `<p>${n} * ${c} = ${n * c}</p>`
+        res.innerHTML += `<p>${n} x ${c} = ${n * c}</p>`
         c++
     }
 }
