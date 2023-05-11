@@ -12,8 +12,8 @@ function contar() {
     }
     var c = start
     while(end >= c) {
-        res.innerHTML += c + "-"
+        res.innerHTML += c + "/u{1F449}"
         c = c + jump
     }
-
+    res.innerHTML += '/u{1F3C1}'
 }
