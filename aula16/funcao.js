@@ -6,5 +6,4 @@ function parImpar (n) {
     }
 }
 
-var res = parImpar(9)
-console.log(res)
+console.log(parImpar(10))
